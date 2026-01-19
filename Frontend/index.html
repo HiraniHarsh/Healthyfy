@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Fitness Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Fitness Planner 💪</h1>
+
+    <div class="form-box">
+        <input type="text" id="name" placeholder="Your Name">
+
+        <input type="number" id="height" placeholder="Height (cm)">
+        <input type="number" id="weight" placeholder="Weight (kg)">
+
+        <select id="goal">
+            <option value="lose">Lose Weight</option>
+            <option value="gain">Gain Muscle</option>
+            <option value="maintain">Maintain</option>
+        </select>
+
+        <input type="number" id="weeks" placeholder="Duration (weeks)">
+
+        <button onclick="submitData()">Generate Plan</button>
+    </div>
+
+    <div id="result" class="result-box"></div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
